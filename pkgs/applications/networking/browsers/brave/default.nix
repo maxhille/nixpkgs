@@ -36,6 +36,7 @@
 , nspr
 , nss
 , pango
+, pipewire_0_2
 , udev
 , xorg
 , zlib
@@ -80,6 +81,7 @@ rpath = lib.makeLibraryPath [
   nspr
   nss
   pango
+  pipewire_0_2
   udev
   xdg-utils
   xorg.libxcb
