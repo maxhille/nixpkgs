@@ -93,6 +93,7 @@ in
 stdenv.mkDerivation rec {
   pname = "brave";
   version = "1.21.74";
+  patches = [ ./user-flags.patch ];
 
   src = fetchurl {
     url = "https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser_${version}_amd64.deb";
